@@ -8,7 +8,7 @@ import {jsonToolResult} from '../tool-result.mjs';
 const readOnly = {readOnlyHint:true, destructiveHint:false, idempotentHint:true, openWorldHint:false};
 export const WORKBENCH_CAPABILITIES = {
   version:WORKBENCH_VERSION, tool:'studio_workbench', uri:WORKBENCH_URI,
-  browser:'https://beacnpool.github.io/NFT-Studio/workbench/',
+  browser:'https://beacnlabs.github.io/NFT-Studio/workbench/',
   terminal:'npm --prefix mcp run tui', recipes:12,
   rendering:'MCP Apps in supporting hosts; structured text and standalone browser fallback elsewhere',
 };
@@ -29,7 +29,7 @@ export function registerWorkbenchTools(server, register, runtime = 'node') {
     const intent=await verifyMintIntent(value),options=intent.mintOptions||DEFAULT_MINT_OPTIONS;
     return {schema:'beacn.mint-readiness.v1',status:'content-verified',intentHash:intent.intentHash,mode:intent.mode,
       name:intent.bundle.name,files:intent.bundle.files.map(file=>({name:file.name,mediaType:file.mediaType,bytes:file.bytes,sha256:file.sha256})),
-      mintOptions:options,reviewUrl:await createMintReviewUrl(intent,'https://beacnpool.github.io/NFT-Studio/'),
+      mintOptions:options,reviewUrl:await createMintReviewUrl(intent,'https://beacnlabs.github.io/NFT-Studio/'),
       checks:{content:true,completeSignedSize:false,liveWalletInputs:false,chainInclusion:false},
       passportEligible:intent.schema==='nft-studio.intent.v1',
       next:'Preview these exact files, then build afresh in the wallet review. Native policy permits further minting until expiry and no mint/burn after expiry.',signed:false,submitted:false};

@@ -5,7 +5,7 @@ This kit stages and verifies a wrapper around the **existing** application Worke
 The wrapper requires an operator-selected HTTPS origin:
 
 - MCP origin: supplied explicitly with `--public-origin`; `https://mcp.example.org` below is an example, not a deployed service.
-- Browser review: `https://beacnpool.github.io/NFT-Studio/`
+- Browser review: `https://beacnlabs.github.io/NFT-Studio/`
 
 These are configuration targets. A successful local check does not establish that `/api/mcp` is live.
 

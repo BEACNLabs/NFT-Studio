@@ -1,6 +1,6 @@
 # A short tour of BEACN Labs
 
-[Open NFT Studio](https://beacnpool.github.io/NFT-Studio/?view=labs). The examples
+[Open NFT Studio](https://beacnlabs.github.io/NFT-Studio/?view=labs). The examples
 below work without connecting a wallet. Each tool names the evidence it checks
 and keeps local results separate from claims about the chain.
 
@@ -100,7 +100,7 @@ registry. Its documented scalar profile does not authenticate native policies.
 
 ## Give your agent tools it can inspect
 
-Open the [repository-hosted MCP setup page](https://beacnpool.github.io/NFT-Studio/mcp/).
+Open the [repository-hosted MCP setup page](https://beacnlabs.github.io/NFT-Studio/mcp/).
 Clone NFT-Studio, build the nested MCP package and point your client at its local
 `mcp/dist/cli.mjs` entry point. The setup page is a guide, not an HTTP MCP endpoint.
 Your client runs the server locally over stdio; no model-provider API key is needed.

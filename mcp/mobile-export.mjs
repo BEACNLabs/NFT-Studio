@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 const copyScript=`document.getElementById('copy-url').addEventListener('click',async()=>{const field=document.getElementById('creation-url'),status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(field.value);status.textContent='URL copied. Paste this into VESPR’s dApp browser.';}catch{field.focus();field.select();status.textContent='Copy the selected URL, then paste it into VESPR’s dApp browser.';}});`;
 const copyHash=createHash('sha256').update(copyScript).digest('base64');
 import {renderTerminalQr} from './terminal-qr.mjs';
-const STUDIO='https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents';
+const STUDIO='https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents';
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 export async function mobileExport(mobile,intent) {
   const {parsePhoneTransferFragment}=await import('./dist/mobile-tools.mjs');

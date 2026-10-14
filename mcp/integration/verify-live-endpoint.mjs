@@ -75,7 +75,7 @@ for (const mode of ['auto', 'legacy']) {
     const intent = checked(await client.callTool({ name: 'create_mint_intent', arguments: args }));
     const verified = checked(await client.callTool({ name: 'verify_mint_intent', arguments: { intent: intent.intent } }));
     assert.equal(verified.intent.intentHash, intent.intent.intentHash);
-    const reviewBase = 'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents';
+    const reviewBase = 'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents';
     if (caps.reviewHandoff?.transport === 'url-fragment') {
       assert.equal(intent.review.baseUrl, reviewBase);
       assert.equal(intent.review.transport, 'url-fragment');
@@ -110,9 +110,9 @@ for (const mode of ['auto', 'legacy']) {
     await client.close();
   }
 }
-const preflight = await boundedFetch(endpoint, { method: 'OPTIONS', headers: { Origin: 'https://beacnpool.github.io', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type,mcp-protocol-version,mcp-method,mcp-name' } });
+const preflight = await boundedFetch(endpoint, { method: 'OPTIONS', headers: { Origin: 'https://beacnlabs.github.io', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type,mcp-protocol-version,mcp-method,mcp-name' } });
 assert.equal(preflight.status, 204);
-assert.equal(preflight.headers.get('access-control-allow-origin'), 'https://beacnpool.github.io');
+assert.equal(preflight.headers.get('access-control-allow-origin'), 'https://beacnlabs.github.io');
 const allowedHeaders=(preflight.headers.get('access-control-allow-headers')||'').toLowerCase().split(',').map(x=>x.trim());
 for(const header of ['content-type','mcp-protocol-version','mcp-method','mcp-name'])assert.ok(allowedHeaders.includes(header),'Missing browser SDK preflight header: '+header);
 assert.equal(preflight.headers.get('access-control-allow-credentials'),null);

@@ -91,7 +91,7 @@ export function registerCreationOptionsTools(register) {
         review: {
           url: await createMintReviewUrl(
             intent,
-            'https://beacnpool.github.io/NFT-Studio/',
+            'https://beacnlabs.github.io/NFT-Studio/',
           ),
         },
         semantics: CREATION_OPTIONS_CAPABILITIES.mintOptions,

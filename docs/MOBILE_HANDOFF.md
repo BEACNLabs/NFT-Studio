@@ -29,7 +29,7 @@ into its address bar. If clipboard access is blocked, select and copy the URL
 shown on the page. Never omit the content fragment.
 
 If signing reports an unclear submission, do not mint again. Open
-[Saved transaction recovery](https://beacnpool.github.io/NFT-Studio/diagnostics/)
+[Saved transaction recovery](https://beacnlabs.github.io/NFT-Studio/diagnostics/)
 in the same wallet browser, select the saved receipt and copy its report. The
 reader does not connect, sign or submit; old receipts may lack the wallet error.
 

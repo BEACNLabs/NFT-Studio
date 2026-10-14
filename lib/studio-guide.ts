@@ -99,7 +99,7 @@ export const INITIAL_GUIDE: GuideState = {
   schema: 'nft-studio.guide.v1',
   stage: 'start',
 };
-export const STUDIO_PUBLIC_URL = 'https://beacnpool.github.io/NFT-Studio/';
+export const STUDIO_PUBLIC_URL = 'https://beacnlabs.github.io/NFT-Studio/';
 export const INSPIRATION = inspiration;
 const option = (id: string, label: string, description = '') => ({
   id,

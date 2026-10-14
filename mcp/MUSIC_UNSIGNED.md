@@ -82,7 +82,7 @@ can decide the failure.
 
 For the existing human wallet flow, save the returned canonical `packetJson` as a
 `.music-release.json` file and open
-`https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music`. The Music Lab reviews the
+`https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music`. The Music Lab reviews the
 files and credits and constructs a fresh transaction using the connected wallet and
 current parameters. It does not import this service response as signing authority.
 Any other external signer must independently verify the exact body/metadata,

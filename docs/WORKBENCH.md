@@ -1,6 +1,6 @@
 # BEACN Workbench
 
-**[Open the workspace](https://beacnpool.github.io/NFT-Studio/workbench/)** ·
+**[Open the workspace](https://beacnlabs.github.io/NFT-Studio/workbench/)** ·
 **`npm --prefix mcp run tui`** · **MCP tool: `studio_workbench`**
 
 The same twelve recipes power the terminal, standalone browser and embedded MCP

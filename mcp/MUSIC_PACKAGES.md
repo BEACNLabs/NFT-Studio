@@ -1,6 +1,6 @@
 # Music packages over MCP
 
-`create_music_release` packages exact supplied cover/audio bytes with release and credit metadata. `verify_music_release` checks a canonical exported package with the same browser codec. Both return a fixed link to [Music Lab](https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music), where a person imports the package, checks the content and explicitly continues to wallet review.
+`create_music_release` packages exact supplied cover/audio bytes with release and credit metadata. `verify_music_release` checks a canonical exported package with the same browser codec. Both return a fixed link to [Music Lab](https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music), where a person imports the package, checks the content and explicitly continues to wallet review.
 
 These are pure package tools. They do not prepare unsigned music transactions, accept wallet snapshots, sign, submit, retrieve media, follow credit links or verify chain state. They do not add a music lane to the existing mint-intent or unsigned-preparation schema. Those tools continue to reject music packages.
 
@@ -46,7 +46,7 @@ The response has:
 - `packageHash`: the canonical package SHA-256 commitment.
 - `packetJson`, `filename`, `packageJsonBytes`: save the exact string as the suggested `.music-release.json` file. Do not pretty-print or append a newline.
 - `budget`: `metadataBytesAt32ByteAssetName`, `metadataByteLimit`, `remainingMetadataBytes` and `completeTransactionMeasured: false` from the existing music codec.
-- `review.url`: always `https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music`.
+- `review.url`: always `https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music`.
 - `status: "package-only; no transaction prepared"`, `operation: "created" | "verified"`, and explicit unchecked transaction/inclusion/authorship/rights fields.
 
 The metadata budget uses a full 32-byte asset name, with a 14,000-byte music metadata cap. It is not a full transaction size, fee quote or promise that a wallet can mint the package. Browser preparation must still obtain current protocol parameters and selected inputs, then check the actual transaction, signatures and fees through the shared mint flow.

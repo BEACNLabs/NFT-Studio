@@ -128,7 +128,7 @@ async function musicTransactionContent(C, prepared, original, packetJson) {
 /** Trusted provider/gate options are operator configuration, never request arguments. */
 export function createUnsignedPreparers(C, {
   protocolProvider,
-  reviewUrl = 'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents',
+  reviewUrl = 'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents',
   preparationGate = createPreparationGate(),
 } = {}) {
   if (typeof protocolProvider !== 'function') throw new Error('A trusted server-side protocol provider is required.');

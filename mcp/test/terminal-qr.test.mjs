@@ -5,7 +5,7 @@ import {jsonToolResult} from '../tool-result.mjs';
 import {unpackResponse} from '../create-review.mjs';
 import {decodeTerminalQr} from './terminal-qr-fixture.mjs';
 
-const base='https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents#transfer=v1.';
+const base='https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents#transfer=v1.';
 test('terminal glyphs independently decode the complete native link on light and dark backgrounds',()=>{
   const synthetic=length=>Buffer.from(Array.from({length},(_,i)=>(i*71+19)%256)).toString('base64url');
   for(const suffix of ['A'.repeat(22)+'.'+'A'.repeat(43), synthetic(16)+'.'+synthetic(32)]){

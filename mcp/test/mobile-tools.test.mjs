@@ -59,7 +59,7 @@ test('native transfer fails closed and revokes failed read-back; invalid intent 
    relay.setScenario(scenario);await assert.rejects(createMobileHandoff({intent}));assert.equal(relay.records.size,0,scenario);
   }
   relay.setScenario('normal');const mobile=await createMobileHandoff({intent});
-  for(const change of [x=>x.url=x.url.replace('beacnpool.github.io','attacker.invalid'),x=>x.intentHash='00'.repeat(32),x=>x.expiresAt=Date.now()-1,x=>x.endTransfer.arguments.id='A'.repeat(22),x=>x.qr.terminalText='\u001b[2Jwrong QR']){
+  for(const change of [x=>x.url=x.url.replace('beacnlabs.github.io','attacker.invalid'),x=>x.intentHash='00'.repeat(32),x=>x.expiresAt=Date.now()-1,x=>x.endTransfer.arguments.id='A'.repeat(22),x=>x.qr.terminalText='\u001b[2Jwrong QR']){
    const bad=structuredClone(mobile);change(bad);await assert.rejects(mobileExport(bad,intent));
   }
  }finally{globalThis.fetch=old;await client.close();}

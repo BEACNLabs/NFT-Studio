@@ -6,7 +6,7 @@ import {
 } from './studio-intent';
 
 export const HANDOFF_API = 'https://handoff.beacnpool.org/api/handoffs';
-export const STUDIO_URL = 'https://beacnpool.github.io/NFT-Studio/';
+export const STUDIO_URL = 'https://beacnlabs.github.io/NFT-Studio/';
 export const HANDOFF_TTL_SECONDS = 15 * 60;
 export const MAX_CIPHERTEXT_BYTES = MAX_MINT_INTENT_BYTES + 16;
 const AAD = new TextEncoder().encode('nft-studio.transfer.v1');

@@ -37,7 +37,7 @@
         "Artwork budget is a target; final full signed bytes are authoritative.",
         "On-chain media is public. A declared license or royalty does not execute access controls."
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/"
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/"
     },
     {
       "id": "beats",
@@ -70,7 +70,7 @@
         "Title and initial settings are fixed in the minted code. Runtime changes reset on reload.",
         "Public reusable program. Audio requires a user gesture; WAV download depends on viewer permissions."
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?utility=beats"
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?utility=beats"
     },
     {
       "id": "focus",
@@ -100,7 +100,7 @@
         "Keep the page open. Device suspension may delay the display; this is not an alarm service.",
         "Session resets on reload. No network, wallet access or holder restriction."
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?utility=focus"
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?utility=focus"
     },
     {
       "id": "decision",
@@ -128,7 +128,7 @@
         "Everyday inspiration; not an audited lottery, vote or prize mechanism.",
         "Session resets on reload. Choices remain public and can be copied."
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?utility=decision"
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?utility=decision"
     },
     {
       "id": "membership",
@@ -232,7 +232,7 @@
       "category": "specialty-art",
       "capability": "existing-specialty-creator",
       "creatorReady": true,
-      "publicURL": "https://beacnpool.github.io/ABCDE/oligarCH/make/",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/oligarCH/make/",
       "description": "A ten-step configurable PFP creator with an existing Plutus V3 gate. Spending an input carrying any one of the eight qualifying oligarCH policies proves holding.",
       "configuration": [
         "Mood",
@@ -321,7 +321,7 @@
       "category": "specialty-art",
       "capability": "attributed-demonstration",
       "creatorReady": false,
-      "publicURL": "https://beacnpool.github.io/ABCDE/tipsy/",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/tipsy/",
       "description": "Three published vector recreations demonstrate a byte-budgeted raster-to-vector pipeline. Bonus Snippet 1, Chapter 2 Snippet and Bonus Snippet 2.",
       "attribution": "Artwork and characters belong to Tipsy Turtles. Unaffiliated demonstration, not an official release. The recreations differ from the original raster frames.",
       "attributionURLs": [
@@ -364,7 +364,7 @@
       "capability": "fixed-campaign",
       "creatorReady": true,
       "description": "An original AVIF artwork plus an open, editable public remix starter. A WebP viewing alternative is also available.",
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?mint=creation-engine",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?mint=creation-engine",
       "originalURL": "https://pool.pm/asset1mp2uq9av5kjlpnfxyzkd56l6qqqj822rnxls2m",
       "original": {
         "txHash": "33a8bfeca1cde0a00e40e3e6f464747d262f49e9866859373db66b2adc212a38",
@@ -407,7 +407,7 @@
       "capability": "fixed-campaign",
       "creatorReady": true,
       "description": "The gold-grill card plus a complete Beat Lab attachment. Fifteen traits, play/edit/export music, open visitor-wallet creator mint.",
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?mint=kayfabe",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?mint=kayfabe",
       "media": [
         {
           "path": "public/art/kayfabe/onchain-512.avif",
@@ -509,7 +509,7 @@
           "sha256": "65ed2ab0cf1d01a15f244f03b16407a58dca524b15e2b73808e72f21a6205391"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=starfall",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=starfall",
       "originalURL": "https://pool.pm/asset1s3ca6lu6gzc3gy35y4ne4sllluefh7vy059den",
       "combinations": {
         "customCover": false,
@@ -577,7 +577,7 @@
           "sha256": "107624b3f7ecb67cc8b5adbe6e3b5516625a69a0ee30608f92d4e89afac30348"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=prismwake",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=prismwake",
       "originalURL": "https://pool.pm/asset1tyvu2xrfgx7hvr8sh2v93mzj6lsz5dswecwf9n",
       "combinations": {
         "customCover": false,
@@ -643,7 +643,7 @@
           "sha256": "d2900d96f5e7d272a51ca43f8141ef55622e807e110303d0c7e9b6f11845a6d7"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=tidelock",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=tidelock",
       "originalURL": "https://pool.pm/asset1d7y7kkxyf2j2xyw9rsetp489k0n50ak9a758h0",
       "combinations": {
         "customCover": false,
@@ -709,7 +709,7 @@
           "sha256": "149c08f2bb59c06d4c9e541a7d7b945b0f1b696a4473cf3a153d534369b45b64"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=lastember",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=lastember",
       "originalURL": "https://pool.pm/asset1ju706ve23zj048t5vwds8wskp5f3qreh5w23wm",
       "combinations": {
         "customCover": false,
@@ -776,7 +776,7 @@
           "sha256": "dc39faa8003ef1252d67b889d0c783d261db1cde5b913b86ed89c7c0d0e8090c"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=chess",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=chess",
       "originalURL": "https://pool.pm/asset1xq2kmrwj4gf6l65q252wul9754ewv0rwhvs6nr",
       "combinations": {
         "customCover": false,
@@ -844,7 +844,7 @@
           "sha256": "b12a37ca5c7ce6af27367a40e2a3d6dc53c37d7c9b4dd4edcc42a7dfb703d8d2"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=checkers",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=checkers",
       "originalURL": "https://pool.pm/asset1ergjzsh67llzmamcuke2s3u55v08a9ve7xkk8k",
       "combinations": {
         "customCover": false,
@@ -911,7 +911,7 @@
           "sha256": "3d660631b13c35ab927c4457dc50e320a921f6b07767ef435ee088aad4cc1e68"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=solitaire",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=solitaire",
       "originalURL": "https://pool.pm/asset143m8w9qyn5ejcq095ey7vk884n0gelzpctq52k",
       "combinations": {
         "customCover": false,
@@ -977,7 +977,7 @@
           "sha256": "5fa1d72c1a6ee1064520d311cd9b11a59a78be4cba0cb73fb49431cb83471f4f"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=ninefold",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=ninefold",
       "originalURL": "https://pool.pm/asset15tu4ws2lm4gk9spsacv4wdq07q7c2dm3g8ens6",
       "combinations": {
         "customCover": false,
@@ -1043,7 +1043,7 @@
           "sha256": "5992a9e400579bdea29c7ef0ddbfd1ff63c779b4035e9871f65bab8b4182872b"
         }
       ],
-      "publicURL": "https://beacnpool.github.io/ABCDE/BMKR/?game=afterlight",
+      "publicURL": "https://beacnlabs.github.io/ABCDE/BMKR/?game=afterlight",
       "originalURL": "https://pool.pm/asset1s5gq0j7rflmhznqg048fzern0lnjycvznrmc8a",
       "combinations": {
         "customCover": false,
@@ -1254,7 +1254,7 @@
       "capability": "frozen-scroll-original",
       "creatorReady": false,
       "description": "The original full Ledger Chess: deterministic referee, computer opponent, opening book, classic-game replay and verifiable public win claims through its reader. It is distinct from the compact Pocket edition.",
-      "publicURL": "https://beacnpool.github.io/ledger-scrolls/ledger-chess.html",
+      "publicURL": "https://beacnlabs.github.io/ledger-scrolls/ledger-chess.html",
       "media": [
         {
           "path": "public/legacy/ledger-chess/game.html",

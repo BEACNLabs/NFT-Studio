@@ -93,7 +93,7 @@ paste it into the address bar. A direct **Open in wallet browser** link is also
 available. Creating files is not a completed wallet handoff or confirmed mint.
 
 If signing ends with “Submission response unclear”, stop retries. Open
-https://beacnpool.github.io/NFT-Studio/diagnostics/ in the same wallet browser,
+https://beacnlabs.github.io/NFT-Studio/diagnostics/ in the same wallet browser,
 read the saved receipt and copy its report. Check the transaction ID on chain
 before another attempt. The report reader never signs or submits.
 

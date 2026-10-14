@@ -124,7 +124,7 @@ export function assertMusicToolResult(result, args) {
   assert.equal(createHash("sha256").update(canonical(body)).digest("hex"), packageHash);
   assert.equal(result.packageJsonBytes, Buffer.byteLength(result.packetJson));
   assert.equal(result.filename, `nft-studio-${packageHash.slice(0, 12)}.music-release.json`);
-  assert.equal(result.review.url, "https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music");
+  assert.equal(result.review.url, "https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music");
   assert.equal(result.status, "package-only; no transaction prepared");
   assert.equal(result.budget.completeTransactionMeasured, false);
   assert.equal(result.budget.metadataByteLimit, 14000);

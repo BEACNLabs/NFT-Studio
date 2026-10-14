@@ -11,7 +11,7 @@ Install BEACN Labs’ NFT-Studio MCP, describe your NFT, then review and approve
 0 ADA Studio fee. Cardano network costs apply.
 
 Setup 👇
-https://beacnpool.github.io/NFT-Studio/mcp/
+https://beacnlabs.github.io/NFT-Studio/mcp/
 
 ---
 

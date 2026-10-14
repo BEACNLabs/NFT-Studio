@@ -341,7 +341,7 @@ export function StateCapsuleLab() {
       </section>
       <p className="ns-lab-sources">
         <a
-          href="https://github.com/BEACNpool/NFT-Studio/blob/main/docs/STATE_CAPSULES.md"
+          href="https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/STATE_CAPSULES.md"
           target="_blank"
           rel="noreferrer"
         >

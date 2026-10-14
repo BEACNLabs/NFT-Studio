@@ -12,7 +12,7 @@ import {
 } from "@studio/music-release.ts";
 import { payloadSchema, fileSchema, decodeFiles } from "./schemas.mjs";
 
-export const MUSIC_REVIEW_URL = "https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music";
+export const MUSIC_REVIEW_URL = "https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music";
 export const MUSIC_MCP_LIMITS = Object.freeze({
   argumentJsonBytes: 80 * 1024,
   packageJsonBytes: MUSIC_LIMITS.packageBytes,

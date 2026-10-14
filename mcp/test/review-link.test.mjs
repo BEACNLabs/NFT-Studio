@@ -25,7 +25,7 @@ const {
     Buffer.from(compiled.outputFiles[0].text).toString('base64')
 );
 const reviewBase =
-  'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents';
+  'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents';
 const fragment = (text) =>
   '#mint=v1.' + Buffer.from(text).toString('base64url');
 const make = async (mode = 'nft', large = false) =>

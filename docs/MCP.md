@@ -23,9 +23,9 @@ NFT Studio ships a real Model Context Protocol service using the official TypeSc
 ## Public connection
 
 **Share the repository-hosted setup page:**
-[beacnpool.github.io/NFT-Studio/mcp/](https://beacnpool.github.io/NFT-Studio/mcp/).
+[beacnlabs.github.io/NFT-Studio/mcp/](https://beacnlabs.github.io/NFT-Studio/mcp/).
 
-The public distribution is the [NFT-Studio repository](https://github.com/BEACNpool/NFT-Studio).
+The public distribution is the [NFT-Studio repository](https://github.com/BEACNLabs/NFT-Studio).
 Your MCP client runs its server locally over stdio. The setup page is a guide,
 **not an HTTP MCP endpoint**: GitHub Pages hosts static files and cannot run the
 server process. See [GitHub's hosting documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
@@ -80,7 +80,7 @@ exact credits, transaction commitments and value conservation. It remains unmint
 Install from the repository with Node **22.13+**:
 
 ```sh
-git clone https://github.com/BEACNpool/NFT-Studio.git
+git clone https://github.com/BEACNLabs/NFT-Studio.git
 cd NFT-Studio
 npm --prefix mcp ci
 npm --prefix mcp run build
@@ -117,7 +117,7 @@ configuration change. Open a new terminal after installing Codex.
 For a Windows checkout in a deep folder, use repository-local long-path support:
 
 ```sh
-git clone --config core.longpaths=true https://github.com/BEACNpool/NFT-Studio.git
+git clone --config core.longpaths=true https://github.com/BEACNLabs/NFT-Studio.git
 ```
 
 Some archived research filenames are long. Check clone/checkout warnings even if
@@ -349,10 +349,10 @@ import { createPublicMcpHandler } from './mcp/dist/worker.mjs';
 const mcp = createPublicMcpHandler({
   publicOrigin: 'https://your-public-host.example',
   endpointPath: '/api/mcp',
-  studioUrl: 'https://beacnpool.github.io/NFT-Studio/',
+  studioUrl: 'https://beacnlabs.github.io/NFT-Studio/',
   allowedOrigins: [
     'https://your-public-host.example',
-    'https://beacnpool.github.io'
+    'https://beacnlabs.github.io'
   ]
 });
 
@@ -395,8 +395,8 @@ revocation; 2,331 encoded URL bytes maximum. This is distinct from the existing
 15-minute encrypted `create_mobile_handoff` for private phone continuation.
 Local-file helper: `--payload-qr` for print PNG/SVG and link; `--mobile` for relay.
 Never substitute an uploaded link when an embedded payload exceeds capacity.
-Docs: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
-https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
+Docs: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
+https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
 
 ## BEACN Workbench
 

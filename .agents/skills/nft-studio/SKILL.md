@@ -8,7 +8,7 @@ description: Create compact Cardano NFT artwork, games, apps or music with NFT-S
 Turn the user's idea into exact files and a reviewable mint request. Use the
 connected NFT-Studio MCP server; discover `studio_capabilities` before selecting
 a format or promising a utility. If it is missing, follow the setup guide at
-https://beacnpool.github.io/NFT-Studio/mcp/ . This is an installation guide for a
+https://beacnlabs.github.io/NFT-Studio/mcp/ . This is an installation guide for a
 local server, not an HTTP MCP address.
 
 ## The agent is the interface
@@ -189,11 +189,11 @@ revocation; 2,331 encoded URL bytes maximum. The historical
 check each requested transfer live and retain the desktop fallback.
 Local-file helper: `--payload-qr` for print PNG/SVG and link; `--mobile` only with a verified available relay.
 Never substitute an uploaded link when an embedded payload exceeds capacity.
-Docs: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
-https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
+Docs: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
+https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
 
 ## BEACN Workbench
 
-For a visual tool library or CIP utility planning, call `studio_workbench`. Use `get_utility_recipe` for implementation steps and `plan_nft_utility` to compose capabilities. Report its compatibility blockers and required engineering; a plan does not install a utility. Supporting MCP Apps hosts render the embedded workspace; otherwise share https://beacnpool.github.io/NFT-Studio/workbench/ . Terminal users can run `npm --prefix mcp run tui`.
+For a visual tool library or CIP utility planning, call `studio_workbench`. Use `get_utility_recipe` for implementation steps and `plan_nft_utility` to compose capabilities. Report its compatibility blockers and required engineering; a plan does not install a utility. Supporting MCP Apps hosts render the embedded workspace; otherwise share https://beacnlabs.github.io/NFT-Studio/workbench/ . Terminal users can run `npm --prefix mcp run tui`.
 
 Use `inspect_mint_readiness` on an exact ordinary intent to inspect the content, options and review link. It does not establish full signed-size fit, wallet ownership or chain inclusion. Existing preview, mobile handoff and wallet-approval rules still apply.

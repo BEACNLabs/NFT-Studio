@@ -6,7 +6,7 @@ import {
 
 export type HandoffEnv = { DB: D1Database };
 const ALLOWED_ORIGINS = new Set([
-  'https://beacnpool.github.io',
+  'https://beacnlabs.github.io',
   'https://handoff.beacnpool.org',
 ]);
 const MAX_BODY = 107000;

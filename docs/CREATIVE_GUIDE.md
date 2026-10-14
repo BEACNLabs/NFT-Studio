@@ -7,7 +7,7 @@ validation and exact-file packaging. The browser handles visible wallet review.
 
 ## Start
 
-Install from [the setup guide](https://beacnpool.github.io/NFT-Studio/mcp/), then
+Install from [the setup guide](https://beacnlabs.github.io/NFT-Studio/mcp/), then
 ask: **“Open NFT-Studio and guide me.”** Codex users can invoke the included
 `$nft-studio` skill from the repository. Other clients can use the `nft-studio`
 MCP prompt or call `studio_guide` with empty arguments.
@@ -122,5 +122,5 @@ revocation; 2,331 encoded URL bytes maximum. This is distinct from the existing
 15-minute encrypted `create_mobile_handoff` for private phone continuation.
 Local-file helper: `--payload-qr` for print PNG/SVG and link; `--mobile` for relay.
 Never substitute an uploaded link when an embedded payload exceeds capacity.
-Docs: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
-https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
+Docs: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
+https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .

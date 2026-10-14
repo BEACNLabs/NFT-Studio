@@ -71,7 +71,7 @@ async function page(width, height) {
       // Only this local browser harness substitutes its test origin.
       const headers = {
         ...request.headers(),
-        origin: 'https://beacnpool.github.io',
+        origin: 'https://beacnlabs.github.io',
       };
       delete headers.host;
       const result = await mf.dispatchFetch(request.url(), {

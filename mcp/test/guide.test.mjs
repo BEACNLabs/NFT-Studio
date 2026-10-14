@@ -208,7 +208,7 @@ for (const era of ['auto', 'legacy'])
         assert.match(e.original.assetNameHex, /^(?:[0-9a-f]{2})+$/);
         assert.match(
           e.shareUrl,
-          /^https:\/\/beacnpool.github.io\/NFT-Studio\/\?inspire=/,
+          /^https:\/\/beacnlabs.github.io\/NFT-Studio\/\?inspire=/,
         );
         assert.equal(
           new URL(e.playUrl).pathname.startsWith('/NFT-Studio/'),

@@ -7,7 +7,7 @@ agent handoff from the remaining live acceptance step.
 The intended journey is: install the local MCP and repository skill → describe
 a supported compact NFT → open the agent's exact review link → inspect its
 content → connect a compatible browser wallet → review and approve the mint →
-verify the confirmed receipt. The [setup page](https://beacnpool.github.io/NFT-Studio/mcp/)
+verify the confirmed receipt. The [setup page](https://beacnlabs.github.io/NFT-Studio/mcp/)
 is an installation guide; it is not a hosted MCP endpoint.
 
 ## Observed on 2026-09-07

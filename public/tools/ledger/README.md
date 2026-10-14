@@ -18,11 +18,11 @@ a requirement of the other.
 
 | Product | Start here | Purpose |
 |---|---|---|
-| Ledger Scrolls | [Library](https://beacnpool.github.io/ledger-scrolls/index.html) | Read and check preserved originals |
-| Ledger Scrolls | [Preserve a file](https://beacnpool.github.io/ledger-scrolls/calculator.html) | Prepare locally, review cost, publish with a wallet |
-| Ledger Book | [Open a book](https://beacnpool.github.io/ledger-scrolls/ledger-book.html) | Find a book and read its entries |
-| Ledger Book | [Create a book](https://beacnpool.github.io/ledger-scrolls/ledger-book.html?create=1) | Personal book, project log, or event guestbook |
-| Both | [Guide](https://beacnpool.github.io/ledger-scrolls/media.html) | Independent uses, optional connection, costs and limits |
+| Ledger Scrolls | [Library](https://beacnlabs.github.io/ledger-scrolls/index.html) | Read and check preserved originals |
+| Ledger Scrolls | [Preserve a file](https://beacnlabs.github.io/ledger-scrolls/calculator.html) | Prepare locally, review cost, publish with a wallet |
+| Ledger Book | [Open a book](https://beacnlabs.github.io/ledger-scrolls/ledger-book.html) | Find a book and read its entries |
+| Ledger Book | [Create a book](https://beacnlabs.github.io/ledger-scrolls/ledger-book.html?create=1) | Personal book, project log, or event guestbook |
+| Both | [Guide](https://beacnlabs.github.io/ledger-scrolls/media.html) | Independent uses, optional connection, costs and limits |
 
 Existing mainnet Books, Scroll pointers, and public URLs remain compatible.
 The actual records live on-chain. Links, bookmarks and the app help find them;

@@ -305,10 +305,10 @@ export function registerGuideTools(server) {
         .slice(0, limit)
         .map((x) => ({
           ...x,
-          playUrl: 'https://beacnpool.github.io/NFT-Studio' + x.playPath,
-          shareUrl: `https://beacnpool.github.io/NFT-Studio/?inspire=${x.id}`,
+          playUrl: 'https://beacnlabs.github.io/NFT-Studio' + x.playPath,
+          shareUrl: `https://beacnlabs.github.io/NFT-Studio/?inspire=${x.id}`,
           copyReviewUrl: x.copyPath
-            ? 'https://beacnpool.github.io/NFT-Studio' + x.copyPath
+            ? 'https://beacnlabs.github.io/NFT-Studio' + x.copyPath
             : null,
         }));
       const out = {

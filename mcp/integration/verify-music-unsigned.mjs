@@ -57,7 +57,7 @@ export function assertSyntheticMusicUnsigned(result, packageResult, fixture) {
   assert.equal(result.witnessVerification.nodeStoredVerifierAcceptsThisPacket, false);
   assert.equal(result.checks.rightsVerified, false); assert.equal(result.checks.chainInclusionVerified, false);
   assert.match(result.checks.walletInputs, /ownership unverified/);
-  assert.equal(result.reviewUrl, 'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=music');
+  assert.equal(result.reviewUrl, 'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=music');
   assert.equal(result.review.url, result.reviewUrl);
   assert.ok(result.unsignedHex.length <= 32768); preflightCbor(result.unsignedHex);
   const tx = C.Transaction.from_hex(result.unsignedHex), body = tx.body(), witnesses = tx.witness_set();

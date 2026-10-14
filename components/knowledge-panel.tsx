@@ -212,7 +212,7 @@ function CuratedKnowledgePanel() {
       <p className="ns-lab-sources">
         Open summaries and reusable data in{' '}
         <a
-          href="https://github.com/BEACNpool/NFT-Studio/tree/main/knowledge"
+          href="https://github.com/BEACNLabs/NFT-Studio/tree/main/knowledge"
           target="_blank"
           rel="noreferrer"
         >

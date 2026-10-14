@@ -46,7 +46,7 @@ export function BeacnLabs({ onBack }: { onBack: () => void }) {
         </div>
         <a
           className="ns-text-link"
-          href="https://github.com/BEACNpool/NFT-Studio"
+          href="https://github.com/BEACNLabs/NFT-Studio"
           target="_blank"
           rel="noreferrer"
         >

@@ -314,7 +314,7 @@ function StudioSurface() {
         <footer className="ns-main-footer">
           <span>NFT-STUDIO · YOUR WORK, ON CHAIN</span>
           <a
-            href="https://github.com/BEACNpool/NFT-Studio"
+            href="https://github.com/BEACNLabs/NFT-Studio"
             target="_blank"
             rel="noreferrer"
           >

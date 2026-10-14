@@ -337,7 +337,7 @@ export function FileMintDialog(
                   : 'Check the saved ID. An unavailable reader or slow wallet response does not prove rejection.'}
               </p>
               <code>{receipt.hash}</code>
-              <a className="ns-text-link" href="https://beacnpool.github.io/NFT-Studio/diagnostics/">Recover saved transaction report</a>
+              <a className="ns-text-link" href="https://beacnlabs.github.io/NFT-Studio/diagnostics/">Recover saved transaction report</a>
               <details>
                 <summary>Show transaction report (no download needed)</summary>
                 <p>Select and copy this report if your wallet browser cannot save files.</p>

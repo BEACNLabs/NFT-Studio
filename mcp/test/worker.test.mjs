@@ -5,7 +5,7 @@ import {verifyImplementationResources} from '../integration/verify-implementatio
 import { Client, StreamableHTTPClientTransport } from '@modelcontextprotocol/client';
 import { createPublicMcpHandler } from './workerd-helper.mjs';
 const origin='https://mcp.example.org';
-const config={publicOrigin:origin,studioUrl:'https://beacnpool.github.io/NFT-Studio/'};
+const config={publicOrigin:origin,studioUrl:'https://beacnlabs.github.io/NFT-Studio/'};
 const file={name:'hello.txt',mediaType:'text/plain',base64:Buffer.from('Hello, Cardano!').toString('base64')};
 const unpack=raw=>{assert.equal(raw.isError,undefined,JSON.stringify(raw));return raw.structuredContent||JSON.parse(raw.content[0].text);};
 
@@ -28,7 +28,7 @@ test('Standalone web-standard Worker artifact serves modern and legacy official 
       assert.equal(proofCheck.verification.status,'match');assert.equal(proofCheck.chainInclusionChecked,false);
       assert.equal(proof.processing.networkRequestsByTool,false);
 
-      assert.equal(packet.review.baseUrl,'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents');assert.equal(new URL(packet.review.url).hash,'#mint=v1.'+Buffer.from(JSON.stringify(packet.intent)).toString('base64url'));
+      assert.equal(packet.review.baseUrl,'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents');assert.equal(new URL(packet.review.url).hash,'#mint=v1.'+Buffer.from(JSON.stringify(packet.intent)).toString('base64url'));
       const valid=unpack(await client.callTool({name:'verify_mint_intent',arguments:{intent:JSON.parse(packet.packetJson)}}));assert.equal(valid.intent.intentHash,packet.intent.intentHash);
       const invalid=await client.callTool({name:'create_mint_intent',arguments:{mode:'data',name:'Bad',files:[{...file,name:'../../x'}]}});assert.equal(invalid.isError,true);
       let error=false;try{const bad=await client.callTool({name:'prepare_unsigned_transaction',arguments:{wallet:'disallowed'}});error=bad.isError;}catch{error=true;}assert.ok(error);
@@ -58,7 +58,7 @@ test('Public Worker enforces exact host/origin, byte/JSON/method bounds and docu
     assert.equal((await req('{}',{'content-type':'text/plain'})).status,415);
     assert.equal((await req('{}',{'content-encoding':'gzip'})).status,415);
     assert.equal((await req(undefined,{},undefined,'GET')).status,405);
-    const preflight=await req('',{origin:'https://beacnpool.github.io'},undefined,'OPTIONS');assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),'https://beacnpool.github.io');assert.equal(preflight.headers.get('access-control-allow-credentials'),null);for(const header of ['mcp-method','mcp-name','mcp-protocol-version'])assert.ok(preflight.headers.get('access-control-allow-headers').toLowerCase().includes(header));
+    const preflight=await req('',{origin:'https://beacnlabs.github.io'},undefined,'OPTIONS');assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),'https://beacnlabs.github.io');assert.equal(preflight.headers.get('access-control-allow-credentials'),null);for(const header of ['mcp-method','mcp-name','mcp-protocol-version'])assert.ok(preflight.headers.get('access-control-allow-headers').toLowerCase().includes(header));
   }finally{await handler.close();}
   const low=await createPublicMcpHandler({...config,rateLimit:1});try{await low.fetch(new Request(origin+'/mcp'));assert.equal((await low.fetch(new Request(origin+'/mcp'))).status,429);}finally{await low.close();}
 });

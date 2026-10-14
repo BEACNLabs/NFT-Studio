@@ -7,16 +7,16 @@
 <title>Vault Tool — seal & unseal a Ledger Scrolls treasure</title>
 <meta name="description" content="Encrypt a seed phrase behind a puzzle answer and generate a self-contained Vault Scroll — or, as a winner, decrypt one. Everything runs locally; nothing is uploaded.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<link rel="canonical" href="https://beacnpool.github.io/ledger-scrolls/vault-tool.html">
+<link rel="canonical" href="https://beacnlabs.github.io/ledger-scrolls/vault-tool.html">
 <meta property="og:title" content="Vault Tool — lock a prize inside a scroll">
 <meta property="og:description" content="Seal a wallet behind a puzzle answer, mint it as a scroll, and let the world race to solve it. The encryption happens in your browser; nothing is ever uploaded.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://beacnpool.github.io/ledger-scrolls/vault-tool.html">
-<meta property="og:image" content="https://beacnpool.github.io/ledger-scrolls/media/og-card.png">
+<meta property="og:url" content="https://beacnlabs.github.io/ledger-scrolls/vault-tool.html">
+<meta property="og:image" content="https://beacnlabs.github.io/ledger-scrolls/media/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://beacnpool.github.io/ledger-scrolls/media/og-card.png">
+<meta name="twitter:image" content="https://beacnlabs.github.io/ledger-scrolls/media/og-card.png">
 <meta name="theme-color" content="#04070f">
 <style>
 :root{
@@ -489,7 +489,7 @@ $("s_answer").addEventListener("input",e=>{ const [t,c]=rateAnswer(e.target.valu
 /* build the self-contained Vault Scroll (no JS — safe to mint) */
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 function vaultScrollHTML(cipher, clue, prize){
-  const tool="https://beacnpool.github.io/ledger-scrolls/vault-tool.html";
+  const tool="https://beacnlabs.github.io/ledger-scrolls/vault-tool.html";
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Vault Scroll — you found it</title>
@@ -596,13 +596,13 @@ $("doUnseal").onclick=async()=>{
       <div class="ls-foot-col">
         <h4>Project</h4>
         <a href="./docs/PRODUCT.md">Product &amp; trust model</a>
-        <a href="https://github.com/BEACNpool/ledger-scrolls">Source &amp; specs</a>
+        <a href="https://github.com/BEACNLabs/ledger-scrolls">Source &amp; specs</a>
         <a href="./media.html">How it works</a>
       </div>
     </nav>
   </div>
   <div class="ls-foot-legal">
-    <a class="ls-foot-beacn" href="https://beacnpool.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
+    <a class="ls-foot-beacn" href="https://beacnlabs.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
       <img src="./brand/beacn-20260904.png" width="40" height="40" alt="" loading="lazy" decoding="async">
       <span>Maintained by BEACN</span>
     </a>

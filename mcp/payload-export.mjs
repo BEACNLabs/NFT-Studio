@@ -9,7 +9,7 @@ export async function payloadExport(result, intent) {
   assert.equal(result.uploads, false);
   assert.equal(result.encrypted, false);
   const url = new URL(result.url);
-  assert.equal(url.origin, 'https://beacnpool.github.io');
+  assert.equal(url.origin, 'https://beacnlabs.github.io');
   assert.equal(url.pathname, '/NFT-Studio/');
   assert(url.hash.startsWith('#payload=v1.'));
   assert(Buffer.byteLength(result.url) <= 2331);

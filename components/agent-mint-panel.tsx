@@ -34,7 +34,7 @@ import {
   parseMintReviewFragment,
 } from '@/lib/studio-review-link';
 
-const MCP_SETUP_URL = 'https://beacnpool.github.io/NFT-Studio/mcp/';
+const MCP_SETUP_URL = 'https://beacnlabs.github.io/NFT-Studio/mcp/';
 const PHONE_SESSION = 'nft-studio.phone-transfer.v1';
 type OpenedRequest = { intent: MintIntent | null; transfer?: PhoneTransfer };
 const MCP_CONFIG = {
@@ -341,7 +341,7 @@ export function AgentMintPanel() {
               </p>
               <a
                 className="ns-text-link"
-                href="https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MCP.md"
+                href="https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MCP.md"
                 target="_blank"
                 rel="noreferrer"
               >

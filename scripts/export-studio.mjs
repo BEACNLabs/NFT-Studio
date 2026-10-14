@@ -83,7 +83,7 @@ try {
     }
   }
   console.log(
-    `Validated ${files.length} static files for https://beacnpool.github.io${prefix}/`,
+    `Validated ${files.length} static files for https://beacnlabs.github.io${prefix}/`,
   );
 } finally {
   await new Promise((resolve, reject) =>

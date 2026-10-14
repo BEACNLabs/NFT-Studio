@@ -118,7 +118,7 @@ test('Node Music uses the actual fixed protocol reader without disclosing packag
   } finally { if (ctx) await ctx.close(); globalThis.fetch = originalFetch; }
 });
 
-test('Four pinned ordinary public response baselines remain byte-identical including every output field', async () => {
+test('Four pinned ordinary responses preserve transaction bytes and all fields except the migrated review URL', async () => {
   const baseline = JSON.parse(await readFile(new URL('./fixtures/ordinary-stateless-before-music.json', import.meta.url)));
   assert.equal(baseline.baselineModuleSha256, '8490f503e9480c2858bc9faf1292aebcb38017cc979cdc6afe0efbed458699af');
   assert.equal(baseline.cases.length, 4); const clock = Date.now;
@@ -127,7 +127,11 @@ test('Four pinned ordinary public response baselines remain byte-identical inclu
     const prepare = createUnsignedPreparer(C, { protocolProvider: () => structuredClone(baseline.quote) });
     for (const fixture of baseline.cases) {
       const result = await prepare(fixture.request);
-      assert.equal(createHash('sha256').update(JSON.stringify(result)).digest('hex'), fixture.responseJsonSha256, fixture.name);
+      assert.equal(result.reviewUrl, 'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents');
+      // Preserve the historical fixture. Normalize only the intentionally migrated
+      // navigation field; every transaction byte and every other field stays pinned.
+      const historical = { ...result, reviewUrl: 'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents' };
+      assert.equal(createHash('sha256').update(JSON.stringify(historical)).digest('hex'), fixture.responseJsonSha256, fixture.name);
       assert.equal(createHash('sha256').update(Buffer.from(result.unsignedHex, 'hex')).digest('hex'), fixture.unsignedHexSha256, fixture.name);
       assert.equal(result.unsignedBytes, fixture.unsignedBytes);
     }

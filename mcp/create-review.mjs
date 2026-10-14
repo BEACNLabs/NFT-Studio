@@ -10,7 +10,7 @@ import {renderTerminalQr,mobileTerminalMessage} from './terminal-qr.mjs';
 import {Client} from '@modelcontextprotocol/client';
 import {StdioClientTransport} from '@modelcontextprotocol/client/stdio';
 export const LIMITS=Object.freeze({requestBytes:16384,files:8,rawBytes:12000,responseBytes:524288,intentBytes:80000,timeoutMs:30000});
-const STUDIO='https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents';
+const STUDIO='https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents';
 const sha=value=>createHash('sha256').update(value).digest('hex');
 const textDecoder=new TextDecoder('utf-8',{fatal:true});
 function fields(v,required,optional=[]){if(!v||typeof v!=='object'||Array.isArray(v)||required.some(k=>!Object.hasOwn(v,k))||Object.keys(v).some(k=>!required.includes(k)&&!optional.includes(k)))throw Error('Unexpected or missing request fields.');}

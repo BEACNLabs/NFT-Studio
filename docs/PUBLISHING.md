@@ -1,6 +1,6 @@
 # GitHub Pages publication
 
-Public app: **https://beacnpool.github.io/NFT-Studio/**
+Public app: **https://beacnlabs.github.io/NFT-Studio/**
 
 - `main` contains the editable source and verification workflow.
 - `gh-pages` contains the validated static app, published from its root.

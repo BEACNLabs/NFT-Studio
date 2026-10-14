@@ -132,7 +132,7 @@ try {
     runtime.dispatchFetch(base, {
       method: 'POST',
       headers: {
-        Origin: 'https://beacnpool.github.io',
+        Origin: 'https://beacnlabs.github.io',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(sealed),
@@ -141,7 +141,7 @@ try {
   assert.equal(created.status, 201);
   assert.equal(
     created.headers.get('Access-Control-Allow-Origin'),
-    'https://beacnpool.github.io',
+    'https://beacnlabs.github.io',
   );
   assert.equal(created.headers.get('cache-control'), 'no-store');
   const record = await created.json();
@@ -233,7 +233,7 @@ try {
   const optionsResponse = await runtime.dispatchFetch(base, {
     method: 'OPTIONS',
     headers: {
-      Origin: 'https://beacnpool.github.io',
+      Origin: 'https://beacnlabs.github.io',
       'Access-Control-Request-Headers': 'content-type',
     },
   });

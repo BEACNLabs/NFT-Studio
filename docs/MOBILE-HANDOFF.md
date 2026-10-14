@@ -6,7 +6,7 @@ wallet browser**, select VESPR if Android asks, then use the normal wallet revie
 If Android does not route the browser link, **Copy creation link** and paste it into
 VESPR's in-app browser. A generic mobile browser does not itself provide wallet signing.
 
-The app remains at `https://beacnpool.github.io/NFT-Studio/`. The short QR contains a
+The app remains at `https://beacnlabs.github.io/NFT-Studio/`. The short QR contains a
 random transfer ID and a fresh AES-256-GCM key in its URL fragment. Studio clears the
 fragment before fetching. Its relay at `https://handoff.beacnpool.org/api/handoffs`
 receives only bounded ciphertext and a fresh nonce. It never receives the decryption

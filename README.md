@@ -6,11 +6,11 @@ NFT-Studio is a skill and minting toolkit for Codex, Claude Code and other local
 coding agents. Describe an idea. Your agent creates the art, writes the code,
 checks the content, and prepares the mint. You control final signing.
 
-[Get started](https://beacnpool.github.io/NFT-Studio/#install) ·
+[Get started](https://beacnlabs.github.io/NFT-Studio/#install) ·
 [Agent starting guide](START_HERE.md) · [Canonical skill](.agents/skills/nft-studio/SKILL.md)
 
 ```sh
-git clone https://github.com/BEACNpool/NFT-Studio.git
+git clone https://github.com/BEACNLabs/NFT-Studio.git
 cd NFT-Studio
 codex
 ```
@@ -47,7 +47,7 @@ For new agent-led creation, start with [START_HERE.md](START_HERE.md).
 
 ## BEACN Payload QR · Create. Scan. Carry.
 
-[Watch the portrait demo and try a printable payload](https://beacnpool.github.io/NFT-Studio/payload-qr/).
+[Watch the portrait demo and try a printable payload](https://beacnlabs.github.io/NFT-Studio/payload-qr/).
 For artists, event organizers, educators and communities sharing compact creations.
 Print a code carrying the actual small payload, forward the same link, and let each
 viewer choose their own wallet mint. The separate encrypted phone handoff lasts 15 minutes.
@@ -65,7 +65,7 @@ see the [mobile handoff guide](docs/MOBILE_HANDOFF.md).
 
 ## BEACN Labs
 
-[Open Labs](https://beacnpool.github.io/NFT-Studio/?view=labs) to explore working
+[Open Labs](https://beacnlabs.github.io/NFT-Studio/?view=labs) to explore working
 tools and experimental contract technology:
 
 Start with the [short Labs field guide](docs/LABS_FIELD_GUIDE.md) for a tour that
@@ -84,7 +84,7 @@ does not require a wallet.
 | Registry signatures | Inspect exact CIP-26 scalar signatures, compare signer keys with separately selected trust rules, and detect stale or conflicting sequence observations locally. |
 | Agent minting | Ask your configured agent for a compact NFT, open its content-bound review link, inspect the files, then connect your wallet and approve the mint. JSON import remains available. |
 
-The [repository-hosted MCP setup page](https://beacnpool.github.io/NFT-Studio/mcp/)
+The [repository-hosted MCP setup page](https://beacnlabs.github.io/NFT-Studio/mcp/)
 shows how to run **28 tools and 62 resources locally from this repo**: Cardano knowledge,
 original CIP source access, exact files and music packages, fixed Capsule parameters,
 unsigned transactions and external witness verification. Your wallet retains signing
@@ -114,9 +114,9 @@ receipt reports, chain inclusion and provenance claims. The experimental
 challenge scope and supplied holding observations with replay protection. It is
 offline research code; no holder authentication service has been deployed.
 
-[Play Midnight Beacon](https://beacnpool.github.io/NFT-Studio/labs/midnight-beacon/) — an original eight-second chiptune and SVG cover in 8,600 raw bytes. Open its exact package in Music release; the [recipe and dated evidence](experiments/midnight-beacon-demo/) include complete synthetic transaction measurement. The example is unminted.
+[Play Midnight Beacon](https://beacnlabs.github.io/NFT-Studio/labs/midnight-beacon/) — an original eight-second chiptune and SVG cover in 8,600 raw bytes. Open its exact package in Music release; the [recipe and dated evidence](experiments/midnight-beacon-demo/) include complete synthetic transaction measurement. The example is unminted.
 
-[Play Five Small Worlds](https://beacnpool.github.io/NFT-Studio/showcase/science-five/) — five interactive BEACN Labs studies: a crypto magic 8-ball, reaction–diffusion garden, chaotic pendulums, drawing-to-sound harmonics and cryptographic stained glass. Each contains working experiments, lessons and artwork export. [Source, math and verification](experiments/science-five/) include exact mint files and complete synthetic transaction measurements. The five original editions are minted and confirmed, with exact chain-recovery receipts and links to each original. Review files can mint separate copies.
+[Play Five Small Worlds](https://beacnlabs.github.io/NFT-Studio/showcase/science-five/) — five interactive BEACN Labs studies: a crypto magic 8-ball, reaction–diffusion garden, chaotic pendulums, drawing-to-sound harmonics and cryptographic stained glass. Each contains working experiments, lessons and artwork export. [Source, math and verification](experiments/science-five/) include exact mint files and complete synthetic transaction measurements. The five original editions are minted and confirmed, with exact chain-recovery receipts and links to each original. Review files can mint separate copies.
 
 ## Open in VESPR
 

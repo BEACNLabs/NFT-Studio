@@ -9,9 +9,9 @@
 <meta property="og:title" content="Ledger Chess — chess that lives inside Cardano">
 <meta property="og:description" content="No server. No file host. The game's bytes live inside Cardano transactions — verified by your browser before a single piece moves. Beat the deterministic engine and your victory is etched on-chain forever.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://beacnpool.github.io/ledger-scrolls/ledger-chess.html">
-<meta property="og:url" content="https://beacnpool.github.io/ledger-scrolls/ledger-chess.html">
-<meta property="og:image" content="https://beacnpool.github.io/ledger-scrolls/media/ledger-chess-card.png">
+<link rel="canonical" href="https://beacnlabs.github.io/ledger-scrolls/ledger-chess.html">
+<meta property="og:url" content="https://beacnlabs.github.io/ledger-scrolls/ledger-chess.html">
+<meta property="og:image" content="https://beacnlabs.github.io/ledger-scrolls/media/ledger-chess-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -1234,7 +1234,7 @@ document.getElementById("ptrline").textContent = GAME_POINTER[1];
 if (isMobileShell())
   document.getElementById("mobilenote").style.display = "block";
 document.getElementById("copylink").addEventListener("click", function(){
-  navigator.clipboard.writeText("https://beacnpool.github.io/ledger-scrolls/ledger-chess.html").then(function(){
+  navigator.clipboard.writeText("https://beacnlabs.github.io/ledger-scrolls/ledger-chess.html").then(function(){
     var c=document.getElementById("copied"); c.style.display="inline";
     setTimeout(function(){ c.style.display="none"; }, 1800);
   });
@@ -1299,13 +1299,13 @@ if("serviceWorker" in navigator){
       <div class="ls-foot-col">
         <h4>Project</h4>
         <a href="./docs/PRODUCT.md">Product &amp; trust model</a>
-        <a href="https://github.com/BEACNpool/ledger-scrolls">Source &amp; specs</a>
+        <a href="https://github.com/BEACNLabs/ledger-scrolls">Source &amp; specs</a>
         <a href="./media.html">How it works</a>
       </div>
     </nav>
   </div>
   <div class="ls-foot-legal">
-    <a class="ls-foot-beacn" href="https://beacnpool.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
+    <a class="ls-foot-beacn" href="https://beacnlabs.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
       <img src="./brand/beacn-20260904.png" width="40" height="40" alt="" loading="lazy" decoding="async">
       <span>Maintained by BEACN</span>
     </a>

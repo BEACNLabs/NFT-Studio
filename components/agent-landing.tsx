@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Check, Copy, Wallet } from 'lucide-react';
 import { assetPath } from '@/lib/paths';
 
-const REPO = 'https://github.com/BEACNpool/NFT-Studio';
+const REPO = 'https://github.com/BEACNLabs/NFT-Studio';
 const INSTALL = `Clone ${REPO} and follow START_HERE.md to set up the NFT-Studio skill for this agent. Then use it to help me create an NFT from my idea.`;
 const FEATURES = [
   'Art',

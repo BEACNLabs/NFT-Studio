@@ -370,7 +370,7 @@ export function ProofOfExistenceLab() {
       </div>
       <p className="ns-lab-sources">
         <a
-          href="https://github.com/BEACNpool/NFT-Studio/blob/main/docs/PROOF_OF_EXISTENCE.md"
+          href="https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/PROOF_OF_EXISTENCE.md"
           target="_blank"
           rel="noreferrer"
         >

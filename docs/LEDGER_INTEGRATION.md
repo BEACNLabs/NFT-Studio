@@ -1,7 +1,7 @@
 # Ledger Scrolls and Ledger Book integration
 
 This kit contains the public MIT source from
-[`BEACNpool/ledger-scrolls`](https://github.com/BEACNpool/ledger-scrolls),
+[`BEACNpool/ledger-scrolls`](https://github.com/BEACNLabs/ledger-scrolls),
 commit `500d0c73b724060e477d9a5d88d31816ac68e341`, with narrow Studio adapters.
 Copy `site/` to `public/tools/ledger/` in NFT Studio. It is a static directory:
 do not run the legacy `scripts/build_static.py` inside the Studio repository.

@@ -85,7 +85,7 @@ try{
       const search=checked(await client.callTool({name:'search_knowledge',arguments:{query:'CIP-68',limit:2}}));assert.ok(search.results.length>0);
       const intent=checked(await client.callTool({name:'create_mint_intent',arguments:{mode:'data',name:'Wrapped app proof',files:[{name:'hello.txt',mediaType:'text/plain',base64:'SGVsbG8sIENhcmRhbm8h'}]}}));
       const verified=checked(await client.callTool({name:'verify_mint_intent',arguments:{intent:intent.intent}}));assert.equal(verified.intent.intentHash,intent.intent.intentHash);
-      assert.equal(intent.review.baseUrl,'https://beacnpool.github.io/NFT-Studio/?view=labs&lab=agents');assert.equal(intent.review.url,intent.review.baseUrl+'#mint=v1.'+Buffer.from(JSON.stringify(intent.intent)).toString('base64url'));
+      assert.equal(intent.review.baseUrl,'https://beacnlabs.github.io/NFT-Studio/?view=labs&lab=agents');assert.equal(intent.review.url,intent.review.baseUrl+'#mint=v1.'+Buffer.from(JSON.stringify(intent.intent)).toString('base64url'));
       const proofFile={name:'proof.txt',base64:'SGVsbG8sIENhcmRhbm8h'};
       const proof=checked(await client.callTool({name:'create_proof_record',arguments:{files:[proofFile]}}));
       const proofCheck=checked(await client.callTool({name:'verify_proof_record',arguments:{recordCborHex:proof.artifact.recordCborHex,file:proofFile}}));

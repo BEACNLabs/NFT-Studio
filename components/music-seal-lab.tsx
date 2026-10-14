@@ -592,7 +592,7 @@ export function MusicSealLab() {
           transaction evaluation is claimed.
         </p>
         <a
-          href="https://github.com/BEACNpool/NFT-Studio/tree/main/experiments/music-schnorr-seal"
+          href="https://github.com/BEACNLabs/NFT-Studio/tree/main/experiments/music-schnorr-seal"
           target="_blank"
           rel="noreferrer"
         >

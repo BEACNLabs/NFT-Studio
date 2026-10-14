@@ -34,7 +34,7 @@ export function createPublicMcpHandler(config) {
   if(origin.origin!==config.publicOrigin||origin.protocol!=='https:'||origin.username||origin.password) throw new Error('Configure one exact public HTTPS origin.');
   const endpointPath=config.endpointPath??'/mcp';
   if(typeof endpointPath!=='string'||!/^\/[a-z0-9_-]+(?:\/[a-z0-9_-]+)*$/.test(endpointPath)||endpointPath.length>100)throw new Error('Configure a bounded absolute MCP path without query or fragment.');
-  const studioUrl=new URL(config.studioUrl||'https://beacnpool.github.io/NFT-Studio/');
+  const studioUrl=new URL(config.studioUrl||'https://beacnlabs.github.io/NFT-Studio/');
   if(studioUrl.protocol!=='https:'||studioUrl.username||studioUrl.password||studioUrl.search||studioUrl.hash) throw new Error('Configure an HTTPS Studio review URL without query or fragment.');
   const reviewUrl=new URL('?view=labs&lab=agents',studioUrl);
   const allowedOrigins=new Set(config.allowedOrigins||[config.publicOrigin,studioUrl.origin]);

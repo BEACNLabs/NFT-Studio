@@ -265,7 +265,7 @@ export function CapsuleContractLab() {
         </p>
         <a
           className="ns-text-link"
-          href="https://github.com/BEACNpool/NFT-Studio/tree/main/experiments/capsule-parameterizer"
+          href="https://github.com/BEACNLabs/NFT-Studio/tree/main/experiments/capsule-parameterizer"
           target="_blank"
           rel="noreferrer"
         >

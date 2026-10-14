@@ -24,7 +24,7 @@ import { liveProtocol, readProtocolQuote } from './protocol.mjs';
 import { createPreparationGate, createUnsignedPreparers } from './public-unsigned.mjs';
 import { registerMusicUnsignedTool, MUSIC_UNSIGNED_CAPABILITIES } from './music-unsigned-tools.mjs';
 import { empty, payloadSchema, intentSchema, prepareSchema, verifySignedSchema, decodeFiles, checkWalletBound, checkMetadata } from './schemas.mjs';
-export const STUDIO_URL = 'https://beacnpool.github.io/NFT-Studio/';
+export const STUDIO_URL = 'https://beacnlabs.github.io/NFT-Studio/';
 export const STUDIO_REVIEW_URL = new URL('?view=labs&lab=agents', STUDIO_URL).href;
 export const CAPABILITIES = Object.freeze({
   schema:'nft-studio.mcp.capabilities.v1', serverVersion:'0.5.0',

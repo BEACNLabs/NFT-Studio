@@ -104,7 +104,7 @@ export function CreationControls({
         () =>
           createMintReviewUrl(
             intent,
-            'https://beacnpool.github.io/NFT-Studio/',
+            'https://beacnlabs.github.io/NFT-Studio/',
           ),
       )
       .then((url) => {

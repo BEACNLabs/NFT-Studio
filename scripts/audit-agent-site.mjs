@@ -59,7 +59,7 @@ for (const [name, type] of Object.entries({ chromium, firefox, webkit })) {
         .click();
       assert.match(
         await page.evaluate(() => window.__copied),
-        /Clone https:\/\/github.com\/BEACNpool\/NFT-Studio and follow START_HERE.md/,
+        /Clone https:\/\/github.com\/BEACNLabs\/NFT-Studio and follow START_HERE.md/,
       );
       assert.match(await page.locator('.al-copy').innerText(), /Copied/);
       assert(

@@ -764,7 +764,7 @@ export function MusicReleaseLab({ active = true }: { active?: boolean }) {
         </p>
         <a
           className="ns-text-link"
-          href="https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MUSIC_RELEASE.md"
+          href="https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MUSIC_RELEASE.md"
           target="_blank"
           rel="noreferrer"
         >
