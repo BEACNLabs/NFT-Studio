@@ -10,9 +10,9 @@
 <meta property="og:title" content="Ledger Book — A record that grows">
 <meta property="og:description" content="Create a public book for a person, project, or occasion. Collect wallet-attributed entries over time; optionally attach an original from Ledger Scrolls.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://beacnpool.github.io/ledger-scrolls/ledger-book.html">
-<meta property="og:url" content="https://beacnpool.github.io/ledger-scrolls/ledger-book.html">
-<meta property="og:image" content="https://beacnpool.github.io/ledger-scrolls/media/ledger-book-card.png">
+<link rel="canonical" href="https://beacnlabs.github.io/ledger-scrolls/ledger-book.html">
+<meta property="og:url" content="https://beacnlabs.github.io/ledger-scrolls/ledger-book.html">
+<meta property="og:image" content="https://beacnlabs.github.io/ledger-scrolls/media/ledger-book-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -683,12 +683,12 @@ body[data-page="media"] .hero .eyebrow{background:none;border:0;padding:0;font-s
         <summary>About <svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></summary>
         <div class="menupanel">
           <a href="#" id="navhow">How it works</a>
-          <a href="https://github.com/BEACNpool/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md" target="_blank" rel="noopener">Protocol spec</a>
+          <a href="https://github.com/BEACNLabs/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md" target="_blank" rel="noopener">Protocol spec</a>
           <div class="menusep" role="separator"></div>
           <div class="menulabel">BEACN ecosystem</div>
           <a href="index.html">The Library</a>
           <a href="ledger-chess.html">Ledger Chess</a>
-          <a href="https://github.com/BEACNpool/ledger-scrolls" target="_blank" rel="noopener">Source (MIT)</a>
+          <a href="https://github.com/BEACNLabs/ledger-scrolls" target="_blank" rel="noopener">Source (MIT)</a>
         </div>
       </details>
     </nav>
@@ -700,7 +700,7 @@ body[data-page="media"] .hero .eyebrow{background:none;border:0;padding:0;font-s
     <button class="drawerlink" id="dfind" type="button">Open a book</button>
     <button class="drawerlink" id="dmint" type="button">Mint a book</button>
     <a class="drawerlink" href="#" id="dhow">How it works</a>
-    <a class="drawerlink" href="https://github.com/BEACNpool/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md" target="_blank" rel="noopener">Protocol spec</a>
+    <a class="drawerlink" href="https://github.com/BEACNLabs/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md" target="_blank" rel="noopener">Protocol spec</a>
     <a class="drawerlink" href="index.html">The Library</a>
     <a class="drawerlink" href="ledger-chess.html">Ledger Chess</a>
   </div>
@@ -836,7 +836,7 @@ body[data-page="media"] .hero .eyebrow{background:none;border:0;padding:0;font-s
           <div class="card"><h3>A book, a keeper, a history</h3><p>Find a Book by $handle, holder address, or NFT reference. Its current holder is the keeper. The reader checks the native mint policy, reported supply, and available ownership history. Unresolved history stays visibly partial.</p></div>
           <div class="card"><h3>Public by design</h3><p>Project logs and personal books use the same public entry rules. They are not private notebooks or owner-only feeds. Each entry pays the keeper an anchor plus a network fee; payment does not establish truth or prevent spam.</p></div>
           <div class="card"><h3>Evidence, with limits</h3><p>Names are self-declared. An input address is not verified human identity. The app relies on providers for chain facts; it does not independently verify Cardano consensus or inclusion proofs. <a href="./media.html">Read the shared guide ↗</a></p></div>
-          <div class="card"><h3>Beyond this website</h3><p>The <a href="https://github.com/BEACNpool/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md">open format</a> allows other readers to recover Books. Long-term access depends on Cardano, retained history, reachable providers, and working readers. Saved links stay on this device.</p></div>
+          <div class="card"><h3>Beyond this website</h3><p>The <a href="https://github.com/BEACNLabs/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md">open format</a> allows other readers to recover Books. Long-term access depends on Cardano, retained history, reachable providers, and working readers. Saved links stay on this device.</p></div>
         </div>
       </details>
     </div>
@@ -1768,7 +1768,7 @@ function fillTech(){
   }).join("");
   html += '<dd class="techlinks"><a target="_blank" rel="noopener" href="' +
     NETS[ACTIVE_NET].scan.replace("/transaction/","/address/") + esc(BOOK.addr) + '">View address on explorer ↗</a> · ' +
-    '<a target="_blank" rel="noopener" href="https://github.com/BEACNpool/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md">Protocol spec ↗</a></dd>';
+    '<a target="_blank" rel="noopener" href="https://github.com/BEACNLabs/ledger-scrolls/blob/main/registry/spec/ledger-book-v2.md">Protocol spec ↗</a></dd>';
   document.getElementById("techbody").innerHTML = html;
 }
 document.getElementById("truststrip").addEventListener("click", function(){
@@ -2570,13 +2570,13 @@ if (qBook) openBook(qBook); else landTab(new URLSearchParams(location.search).ge
       <div class="ls-foot-col">
         <h4>Project</h4>
         <a href="./docs/PRODUCT.md">Product &amp; trust model</a>
-        <a href="https://github.com/BEACNpool/ledger-scrolls">Source &amp; specs</a>
+        <a href="https://github.com/BEACNLabs/ledger-scrolls">Source &amp; specs</a>
         <a href="./media.html">How it works</a>
       </div>
     </nav>
   </div>
   <div class="ls-foot-legal">
-    <a class="ls-foot-beacn" href="https://beacnpool.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
+    <a class="ls-foot-beacn" href="https://beacnlabs.github.io/ABCDE/pool/" aria-label="BEACNpool legacy archive">
       <img src="./brand/beacn-20260904.png" width="40" height="40" alt="" loading="lazy" decoding="async">
       <span>Maintained by BEACN</span>
     </a>

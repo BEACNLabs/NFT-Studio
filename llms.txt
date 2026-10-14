@@ -1,15 +1,15 @@
 # NFT-Studio — agent-first creation
 
-Public app: https://beacnpool.github.io/NFT-Studio/
-Open source: https://github.com/BEACNpool/NFT-Studio
-Cardano knowledge: https://github.com/BEACNpool/NFT-Studio/tree/main/knowledge
-MCP documentation: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MCP.md
+Public app: https://beacnlabs.github.io/NFT-Studio/
+Open source: https://github.com/BEACNLabs/NFT-Studio
+Cardano knowledge: https://github.com/BEACNLabs/NFT-Studio/tree/main/knowledge
+MCP documentation: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MCP.md
 
 ## Repository MCP
 
-Setup/share page: https://beacnpool.github.io/NFT-Studio/mcp/
+Setup/share page: https://beacnlabs.github.io/NFT-Studio/mcp/
 This is a static setup guide, NOT an HTTP MCP endpoint.
-Clone https://github.com/BEACNpool/NFT-Studio and run:
+Clone https://github.com/BEACNLabs/NFT-Studio and run:
   npm --prefix mcp ci
   npm --prefix mcp run build
 Configure your MCP client with command node and args containing the absolute
@@ -49,7 +49,7 @@ view the creation until expiry. No wallet connection or mint permission is impli
 Ordinary limits remain eight files / 12,000 total raw bytes. Preserve oversized art;
 explain its supported route and agree on material changes. Never substitute a LAN
 server or unrelated QR. An older MCP can use Continue on phone in the Studio browser.
-Mobile guide: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MOBILE_HANDOFF.md
+Mobile guide: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MOBILE_HANDOFF.md
 File inputs contain explicit canonical base64 bytes, never local paths or URLs.
 The local server receives the content explicitly supplied by its client.
 For an ordinary mint, return create_mint_intent.review.url exactly to the human.
@@ -97,7 +97,7 @@ publication or a blockchain timestamp.
 The separately installed Node MCP can prepare unsigned transactions and verify
 external signatures. It never holds a signing key or submits a transaction.
 
-Original CIP sources: search_cip_sources searches id/title/status in 148 pinned README originals; get_cip_source_chunk returns bounded inert UTF-8 chunks with attribution. This is separate from 58 curated entries/73 reviewed primary sources. Excludes annexes, CPS and off-repository links. Guide: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/CIP_SOURCE_ACCESS.md
+Original CIP sources: search_cip_sources searches id/title/status in 148 pinned README originals; get_cip_source_chunk returns bounded inert UTF-8 chunks with attribution. This is separate from 58 curated entries/73 reviewed primary sources. Excludes annexes, CPS and off-repository links. Guide: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/CIP_SOURCE_ACCESS.md
 
 
 ## Public payload QR and mint options (MCP 0.4.0)
@@ -115,12 +115,12 @@ revocation; 2,331 encoded URL bytes maximum. This is distinct from the existing
 15-minute encrypted `create_mobile_handoff` for private phone continuation.
 Local-file helper: `--payload-qr` for print PNG/SVG and link; `--mobile` for relay.
 Never substitute an uploaded link when an embedded payload exceeds capacity.
-Docs: https://github.com/BEACNpool/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
-https://github.com/BEACNpool/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
+Docs: https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/PAYLOAD_QR.md and
+https://github.com/BEACNLabs/NFT-Studio/blob/main/docs/MINT_OPTIONS.md .
 
 ## BEACN Workbench (MCP 0.5.0)
 
 Use studio_workbench for the visual library and full runtime toolbox. get_utility_recipe supplies sourced instructions and lifecycle boundaries. plan_nft_utility composes one to eight recipes and flags incompatible Music/Capsule/ordinary routes; plans enable no benefits. inspect_mint_readiness checks ordinary content before separate wallet review.
-Browser: https://beacnpool.github.io/NFT-Studio/workbench/
+Browser: https://beacnlabs.github.io/NFT-Studio/workbench/
 Terminal: npm --prefix mcp run tui
 28 Node tools / 26 Worker tools / 62 resources. Embedded MCP Apps support depends on the host.
